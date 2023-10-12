@@ -1,20 +1,25 @@
 // src/App.js
 
-import React from 'react';
+import React, { useState } from 'react';
 import Header from './components/Header';
 import Form from './components/Form';
 import Preview from './components/Preview';
 import Resume from './components/Resume';
 
 function App() {
-  // State and data management can go here
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    education: '',
+    experience: '',
+  });
 
   return (
     <div>
       <Header />
-      <Form />
-      <Preview />
-      <Resume />
+      <Form formData={formData} setFormData={setFormData} />
+      <Preview formData={formData} />
+      <Resume formData={formData} />
     </div>
   );
 }
