@@ -1,0 +1,12 @@
+.container {
+    padding: 30px;
+    text-align: center;
+}
+
+.container .heading {
+    max-width: 350px;
+    color: #000;
+    font-size: 3.5rem;
+    font-weight: bold;
+
+}

@@ -1,7 +1,7 @@
 // src/App.js
 
 import React, { useState } from 'react';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import Form from './components/Form';
 import Preview from './components/Preview';
 import Resume from './components/Resume';
